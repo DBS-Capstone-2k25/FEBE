@@ -8,4 +8,11 @@ class Articles extends BaseController
     {
         return view('articles/index');
     }
+
+    public function detail($slug = null)
+    {
+        // In a real application, you would fetch the article data from a database
+        // For now, we'll just display the static view
+        return view('articles/detail');
+    }
 }

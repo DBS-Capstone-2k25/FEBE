@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
 </head>
+
 <body class="bg-gray-50">
     <?php include(APPPATH . 'Views/landing-page/navbar.php'); ?>
 
@@ -15,21 +17,21 @@
             <!-- Search and Filter Section -->
             <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
                 <div class="w-full md:w-96">
-                    <form class="flex items-center">
+                    <form class="flex items-center" id="searchForm">
                         <label for="simple-search" class="sr-only">Search</label>
                         <div class="relative w-full">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                                 </svg>
                             </div>
-                            <input type="text" id="simple-search" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Search articles..." required>
+                            <input type="text" id="simple-search" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Search articles...">
                         </div>
                     </form>
                 </div>
                 <div class="flex gap-4">
                     <select id="categories" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
-                        <option selected>All Categories</option>
+                        <option selected value="all">All Categories</option>
                         <option value="banking">Banking</option>
                         <option value="technology">Technology</option>
                         <option value="security">Security</option>
@@ -63,55 +65,61 @@
             <!-- Article Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Article Card 1 -->
-                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="<?= base_url('assets/img/article1.jpg') ?>" class="w-full h-48 object-cover" alt="Article 1">
-                    <div class="p-6">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Technology</span>
-                        <h2 class="text-xl font-bold mt-2 mb-2">Understanding Blockchain in Modern Banking</h2>
-                        <p class="text-gray-600 mb-4">A comprehensive guide to blockchain technology and its impact on modern banking systems.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="w-6 h-6 rounded-full mr-2" src="<?= base_url('assets/img/author2.jpg') ?>" alt="Author">
-                                <span class="text-sm text-gray-600">Jane Smith</span>
+                <a href="<?= base_url('articles/understanding-blockchain') ?>" class="block article-card" data-category="technology">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="<?= base_url('assets/img/article1.jpg') ?>" class="w-full h-48 object-cover" alt="Article 1">
+                        <div class="p-6">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Technology</span>
+                            <h2 class="text-xl font-bold mt-2 mb-2">Understanding Blockchain in Modern Banking</h2>
+                            <p class="text-gray-600 mb-4">A comprehensive guide to blockchain technology and its impact on modern banking systems.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img class="w-6 h-6 rounded-full mr-2" src="<?= base_url('assets/img/author2.jpg') ?>" alt="Author">
+                                    <span class="text-sm text-gray-600">Jane Smith</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Dec 12, 2023</span>
                             </div>
-                            <span class="text-sm text-gray-500">Dec 12, 2023</span>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </a>
 
                 <!-- Article Card 2 -->
-                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="<?= base_url('assets/img/article2.jpg') ?>" class="w-full h-48 object-cover" alt="Article 2">
-                    <div class="p-6">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Security</span>
-                        <h2 class="text-xl font-bold mt-2 mb-2">Cybersecurity Best Practices for Online Banking</h2>
-                        <p class="text-gray-600 mb-4">Essential security measures to protect your online banking transactions and personal data.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="w-6 h-6 rounded-full mr-2" src="<?= base_url('assets/img/author3.jpg') ?>" alt="Author">
-                                <span class="text-sm text-gray-600">Mike Johnson</span>
+                <a href="<?= base_url('articles/cybersecurity-best-practices') ?>" class="block article-card" data-category="security">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="<?= base_url('assets/img/article2.jpg') ?>" class="w-full h-48 object-cover" alt="Article 2">
+                        <div class="p-6">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Security</span>
+                            <h2 class="text-xl font-bold mt-2 mb-2">Cybersecurity Best Practices for Online Banking</h2>
+                            <p class="text-gray-600 mb-4">Essential security measures to protect your online banking transactions and personal data.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img class="w-6 h-6 rounded-full mr-2" src="<?= base_url('assets/img/author3.jpg') ?>" alt="Author">
+                                    <span class="text-sm text-gray-600">Mike Johnson</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Dec 10, 2023</span>
                             </div>
-                            <span class="text-sm text-gray-500">Dec 10, 2023</span>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </a>
 
                 <!-- Article Card 3 -->
-                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="<?= base_url('assets/img/article3.jpg') ?>" class="w-full h-48 object-cover" alt="Article 3">
-                    <div class="p-6">
-                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Finance</span>
-                        <h2 class="text-xl font-bold mt-2 mb-2">Digital Wallets: The New Era of Payments</h2>
-                        <p class="text-gray-600 mb-4">How digital wallets are transforming the way we handle money and make payments.</p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="w-6 h-6 rounded-full mr-2" src="<?= base_url('assets/img/author4.jpg') ?>" alt="Author">
-                                <span class="text-sm text-gray-600">Sarah Lee</span>
+                <a href="<?= base_url('articles/digital-wallets') ?>" class="block article-card" data-category="finance">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="<?= base_url('assets/img/article3.jpg') ?>" class="w-full h-48 object-cover" alt="Article 3">
+                        <div class="p-6">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Finance</span>
+                            <h2 class="text-xl font-bold mt-2 mb-2">Digital Wallets: The New Era of Payments</h2>
+                            <p class="text-gray-600 mb-4">How digital wallets are transforming the way we handle money and make payments.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img class="w-6 h-6 rounded-full mr-2" src="<?= base_url('assets/img/author4.jpg') ?>" alt="Author">
+                                    <span class="text-sm text-gray-600">Sarah Lee</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Dec 8, 2023</span>
                             </div>
-                            <span class="text-sm text-gray-500">Dec 8, 2023</span>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </a>
             </div>
 
             <!-- Load More Button -->
@@ -124,5 +132,49 @@
     <?php include(APPPATH . 'Views/landing-page/footer.php'); ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script>
+        // Search and filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('simple-search');
+            const categorySelect = document.getElementById('categories');
+            const articles = document.querySelectorAll('.article-card');
+
+            function filterArticles() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedCategory = categorySelect.value;
+
+                articles.forEach(article => {
+                    const title = article.querySelector('h2').textContent.toLowerCase();
+                    const description = article.querySelector('p').textContent.toLowerCase();
+                    const category = article.dataset.category;
+
+                    const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
+                    const matchesCategory = selectedCategory === 'all' || category === selectedCategory;
+
+                    article.style.display = matchesSearch && matchesCategory ? 'block' : 'none';
+                });
+            }
+
+            // Add event listeners
+            searchInput.addEventListener('input', filterArticles);
+            categorySelect.addEventListener('change', filterArticles);
+
+            // Prevent form submission
+            document.getElementById('searchForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+            });
+
+            // Add hover effect
+            articles.forEach(article => {
+                article.addEventListener('mouseenter', function() {
+                    this.querySelector('article').classList.add('transform', 'scale-105');
+                });
+                article.addEventListener('mouseleave', function() {
+                    this.querySelector('article').classList.remove('transform', 'scale-105');
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
