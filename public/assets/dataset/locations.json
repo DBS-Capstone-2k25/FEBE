@@ -1,1 +1,72 @@
-{"locations": [{"name": "Location 1", "latitude": 51.5074, "longitude": -0.1278, "description": "This is location 1.", "image": "/static/img/nt.JPG"}, {"name": "Location 2", "latitude": 48.8566, "longitude": 2.3522, "description": "This is location 2.", "image": "city.png"}]}
+[
+  {
+    "Nama": "TPS Terpadu Babakan Sari",
+    "Latitude": -6.921756926962495,
+    "Longitude": 107.64958772804906,
+    "Alamat": "Jl. Babakan Sari No.64, Babakan Sari, Kec. Kiaracondong, Kota Bandung, Jawa Barat 40272",
+    "Deskripsi": "| Senin: 09.00–17.00 | Selasa: 09.00–17.00 | Rabu: 09.00–17.00 | Kamis: 09.00–17.00 | Jumat: 09.00–17.00"
+  },
+  {
+    "Nama": "TPS Pahlawan",
+    "Latitude": -6.8696539128254095,
+    "Longitude": 107.67164882956938,
+    "Alamat": "Jl. Cikutra No.328b, Neglasari, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40124",
+    "Deskripsi": "| Senin: Buka 24 jam | Selasa: Buka 24 jam | Rabu: Buka 24 jam | Kamis: Buka 24 jam | Jumat: Buka 24 jam | Sabtu: Buka 24 jam | Minggu: Buka 24 jam"
+  },
+  {
+    "Nama": "TPS 3R Kebon Jeruk Beriman",
+    "Latitude": -6.898285119700611,
+    "Longitude": 107.59749111490737,
+    "Alamat": "Jl. Babatan No.5, Kb. Jeruk, Kec. Andir, Kota Bandung, Jawa Barat 40181",
+    "Deskripsi": "| Senin: 07.00–15.00 | Selasa: 07.00–15.00 | Rabu: 07.00–15.00 | Kamis: 07.00–15.00 | Jumat: 07.00–15.00 | Sabtu: 07.00–15.00 | Minggu: Tutup"
+  },
+  {
+    "Nama": "TPS Sarimadu",
+    "Latitude": -6.853292448786134,
+    "Longitude": 107.5659054216254,
+    "Alamat": "Jl. Sariwangi, Sarijadi, Kec. Sukasari, Kota Bandung, Jawa Barat 40151",
+    "Deskripsi": "Informasi jam operasional tidak tersedia di Google Maps."
+  },
+  {
+    "Nama": "TPS 3R Kel.Panjunan",
+    "Latitude": -6.896921768089112,
+    "Longitude": 107.60161098794416,
+    "Alamat": "Jl. Bojongloa No.53/93, Panjunan, Kec. Astanaanyar, Kota Bandung, Jawa Barat 40242",
+    "Deskripsi": "Informasi jam operasional tidak tersedia di Google Maps."
+  },
+  {
+    "Nama": "TPST Babakan Siliwangi",
+    "Latitude": -6.853292448786134,
+    "Longitude": 107.60023769693188,
+    "Alamat": "Jl. Siliwangi, Lb. Siliwangi, Kecamatan Coblong, Kota Bandung, Jawa Barat 40131",
+    "Deskripsi": "| Senin: 08.00–15.00 | Selasa: 08.00–15.00 | Rabu: 08.00–15.00 | Kamis: 08.00–15.00 | Jumat: 08.00–16.00 | Sabtu: 08.00–15.00 | Minggu: Tutup"
+  },
+  {
+    "Nama": "TPS Pagarsih",
+    "Latitude": -6.9119184198269625,
+    "Longitude": 107.5933712418706,
+    "Alamat": "Jl. Pagarsih, Babakan Tarogong, Kec. Astanaanyar, Kota Bandung, Jawa Barat",
+    "Deskripsi": "Informasi jam operasional tidak tersedia di Google Maps."
+  },
+  {
+    "Nama": "TPS Regol",
+    "Latitude": -6.91600833321784,
+    "Longitude": 107.6139706070545,
+    "Alamat": "Jl. Suryalaya IX No.2, Cijagra, Kec. Lengkong, Kota Bandung, Jawa Barat 40265",
+    "Deskripsi": "| Senin: 06.00–15.00 | Selasa: 06.00–15.00 | Rabu: Tutup | Kamis: 06.00–15.00 | Jumat: 06.00–15.00 | Sabtu: 06.00–15.00 | Minggu: Tutup"
+  },
+  {
+    "Nama": "TPS Antapani",
+    "Latitude": -6.887378196978461,
+    "Longitude": 107.64830288236098,
+    "Alamat": "Jl. Indramayu No.3, Antapani Kidul, Kec. Antapani, Kota Bandung, Jawa Barat 40291",
+    "Deskripsi": "Informasi jam operasional tidak tersedia di Google Maps."
+  },
+  {
+    "Nama": "TPS - SPA Tegallega",
+    "Latitude": -6.8914683224104305,
+    "Longitude": 107.60161098794416,
+    "Alamat": "Jl. Moch. Toha No.58, Ciateul, Kec. Regol, Kota Bandung, Jawa Barat 40252",
+    "Deskripsi": "Informasi jam operasional tidak tersedia di Google Maps."
+  }
+]
