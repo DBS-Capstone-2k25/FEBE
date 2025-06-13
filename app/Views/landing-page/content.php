@@ -1,42 +1,104 @@
-<section class="bg-gray-50 py-16">
+<!-- Hero Section -->
+<section class="bg-gradient-to-b from-green-50 to-white py-16">
     <div class="max-w-screen-xl px-4 mx-auto">
-        <div class="max-w-2xl mx-auto text-center mb-16">
-            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">Features That Make Banking Easier</h2>
-            <p class="text-gray-500 lg:mb-8 md:text-lg">Discover how our digital banking solutions can help you manage your finances with ease and security.</p>
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">Solusi Cerdas untuk Pengelolaan Sampah</h2>
+            <p class="text-gray-600 lg:mb-8 md:text-lg">Menggunakan teknologi Artificial Intelligence untuk membantu masyarakat mengelola sampah dengan lebih efektif dan ramah lingkungan.</p>
         </div>
-        
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <!-- Feature 1 -->
-            <div class="p-6 bg-white rounded-lg shadow">
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12">
-                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+
+        <!-- AI Features -->
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3 mb-16">
+            <!-- Feature 1: Image Classification -->
+            <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-green-100 lg:h-14 lg:w-14">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                 </div>
-                <h3 class="mb-2 text-xl font-bold">Secure Transactions</h3>
-                <p class="text-gray-500">Advanced encryption and security measures to protect your financial transactions.</p>
+                <h3 class="mb-3 text-xl font-bold text-gray-900">Klasifikasi Sampah</h3>
+                <p class="text-gray-600 mb-4">AI canggih yang dapat mengidentifikasi jenis sampah melalui gambar, membantu Anda memilah sampah dengan tepat.</p>
+                <a href="<?= base_url('img-clas') ?>" class="inline-flex items-center text-green-600 hover:text-green-700">
+                    Coba Sekarang
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
             </div>
-            
-            <!-- Feature 2 -->
-            <div class="p-6 bg-white rounded-lg shadow">
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12">
-                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
+
+            <!-- Feature 2: Object Detection -->
+            <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-green-100 lg:h-14 lg:w-14">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                 </div>
-                <h3 class="mb-2 text-xl font-bold">Real-time Notifications</h3>
-                <p class="text-gray-500">Stay informed with instant alerts for all your account activities.</p>
+                <h3 class="mb-3 text-xl font-bold text-gray-900">Deteksi Objek</h3>
+                <p class="text-gray-600 mb-4">Mendeteksi dan mengidentifikasi berbagai jenis sampah dalam satu gambar secara real-time.</p>
+                <a href="<?= base_url('objec-det') ?>" class="inline-flex items-center text-green-600 hover:text-green-700">
+                    Coba Sekarang
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
             </div>
-            
-            <!-- Feature 3 -->
-            <div class="p-6 bg-white rounded-lg shadow">
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12">
-                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+
+            <!-- Feature 3: AI Assistant -->
+            <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-green-100 lg:h-14 lg:w-14">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                     </svg>
                 </div>
-                <h3 class="mb-2 text-xl font-bold">Smart Scheduling</h3>
-                <p class="text-gray-500">Schedule payments and transfers at your convenience with our intuitive interface.</p>
+                <h3 class="mb-3 text-xl font-bold text-gray-900">AI Assistant</h3>
+                <p class="text-gray-600 mb-4">Asisten virtual cerdas yang siap membantu menjawab pertanyaan seputar pengelolaan sampah.</p>
+                <a href="<?= base_url('chatbot') ?>" class="inline-flex items-center text-green-600 hover:text-green-700">
+                    Coba Sekarang
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Urgency Section -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Image Section -->
+                <div class="relative h-64 md:h-auto">
+                    <img src="<?= base_url('assets/img/urgensi.webp') ?>" alt="Urgensi Pengelolaan Sampah" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <!-- Content Section -->
+                <div class="p-8 md:p-12">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Mengapa Pengelolaan Sampah Penting?</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="w-5 h-5 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-gray-600">Indonesia menghasilkan 175.000 ton sampah per hari</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="w-5 h-5 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-gray-600">81% sampah plastik tidak didaur ulang dengan benar</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="w-5 h-5 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-gray-600">Teknologi AI dapat meningkatkan efisiensi daur ulang hingga 90%</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="<?= base_url('articles') ?>" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-colors duration-300">
+                            Pelajari Lebih Lanjut
+                            <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

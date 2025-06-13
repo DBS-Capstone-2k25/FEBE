@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Sampah API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <div class="container mx-auto p-4">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-center text-blue-600 mb-4">
+          Chatbot Sampah
+        </h2>
+
+        <!-- Chat interface -->
+        <div
+          id="chat-output"
+          class="bg-gray-100 p-4 rounded-lg h-64 overflow-auto mb-4"
+        >
+          <p class="text-gray-600">Welcome! Ask me about waste management.</p>
+        </div>
+
+        <!-- Input field -->
+        <input
+          id="user-input"
+          type="text"
+          class="w-full p-3 border border-gray-300 rounded-md mb-4"
+          placeholder="Ask something about waste..."
+        />
+
+        <!-- Submit button -->
+        <button
+          id="submit-btn"
+          class="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 transition duration-300"
+        >
+          Ask
+        </button>
+
+        <!-- Loader -->
+        <div id="loader" class="hidden text-center mt-4">
+          <span class="text-gray-600">Processing...</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // API endpoint
+      const apiEndpoint =
+        "https://chatbot-qwen-1069990625306.asia-southeast2.run.app/chat";
+
+      // Select elements
+      const userInput = document.getElementById("user-input");
+      const chatOutput = document.getElementById("chat-output");
+      const submitBtn = document.getElementById("submit-btn");
+      const loader = document.getElementById("loader");
+
+      // Function to send API request and get response
+      const sendMessage = async () => {
+        const prompt = userInput.value.trim();
+        if (!prompt) return;
+
+        // Show loader
+        loader.classList.remove("hidden");
+
+        try {
+          // Prepare the request payload
+          const requestPayload = {
+            prompt: prompt,
+            max_new_tokens: 512,
+          };
+
+          // Send POST request to the API
+          const response = await fetch(apiEndpoint, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(requestPayload),
+          });
+
+          const data = await response.json();
+
+          // Update chat output with the API response
+          const botResponse =
+            data.response || "Sorry, I didn’t understand that.";
+          chatOutput.innerHTML += `<p class="text-gray-800 font-semibold">You:</p><p class="text-gray-600">${prompt}</p>`;
+          chatOutput.innerHTML += `<p class="text-gray-800 font-semibold">Bot:</p><p class="text-gray-600">${botResponse}</p>`;
+
+          // Scroll to the bottom of the chat
+          chatOutput.scrollTop = chatOutput.scrollHeight;
+
+          // Clear the input field
+          userInput.value = "";
+        } catch (error) {
+          chatOutput.innerHTML += `<p class="text-red-600">Error: Unable to get response.</p>`;
+        } finally {
+          // Hide loader
+          loader.classList.add("hidden");
+        }
+      };
+
+      // Event listener for the submit button
+      submitBtn.addEventListener("click", sendMessage);
+
+      // Optional: Trigger the button when the user presses Enter
+      userInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          sendMessage();
+        }
+      });
+    </script>
+  </body>
+</html>
