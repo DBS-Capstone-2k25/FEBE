@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Detail - Digital Banking Solutions</title>
+    <title>Krisis Sampah di Indonesia: Saatnya Bertindak - Bedah Sampah</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/icon/logo2.png') ?>">
+
 </head>
+
 <body class="bg-gray-50">
     <?php include(APPPATH . 'Views/landing-page/navbar.php'); ?>
 
@@ -17,59 +21,72 @@
                 <header class="mb-4 lg:mb-6">
                     <address class="flex items-center mb-6 not-italic">
                         <div class="inline-flex items-center mr-3 text-sm text-gray-900">
-                            <img class="mr-4 w-16 h-16 rounded-full" src="<?= base_url('assets/img/author.jpg') ?>" alt="Author">
+                            <img class="mr-4 w-16 h-16 rounded-full" src="<?= base_url('assets/img/author-lisa.webp') ?>" alt="Lisa Pertiwi">
                             <div>
-                                <a href="#" class="text-xl font-bold text-gray-900">John Doe</a>
-                                <p class="text-base text-gray-500">Digital Banking Expert</p>
-                                <p class="text-base text-gray-500"><time datetime="2023-12-15">Dec. 15, 2023</time></p>
+                                <a href="#" class="text-xl font-bold text-gray-900">Lisa Pertiwi</a>
+                                <p class="text-base text-gray-500">Peneliti Lingkungan</p>
+                                <p class="text-base text-gray-500"><time datetime="2023-12-20">20 Des 2023</time></p>
                             </div>
                         </div>
                     </address>
-                    <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">The Future of Digital Banking: Trends and Innovations</h1>
+                    <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">Krisis Sampah di Indonesia: Saatnya Bertindak</h1>
                 </header>
 
                 <!-- Featured Image -->
                 <figure class="mb-8">
-                    <img src="<?= base_url('assets/img/featured-article.jpg') ?>" class="w-full rounded-lg" alt="Featured Image">
-                    <figcaption class="mt-2 text-sm text-center text-gray-500">Digital banking transformation illustration</figcaption>
+                    <img src="<?= base_url('assets/img/sampah-krisis.webp') ?>" class="w-full rounded-lg" alt="Krisis Sampah di Indonesia">
+                    <figcaption class="mt-2 text-sm text-center text-gray-500">Tumpukan sampah di salah satu TPA di Indonesia</figcaption>
                 </figure>
 
                 <!-- Article Content -->
                 <div class="prose max-w-none">
-                    <p class="lead">The banking industry is undergoing a dramatic transformation, driven by technological innovation and changing consumer expectations. In this article, we'll explore the latest trends and innovations shaping the future of digital banking.</p>
-                    
-                    <h2>The Rise of Digital-First Banking</h2>
-                    <p>Digital-first banking is no longer just a convenience—it's becoming the primary way people manage their finances. Traditional banks are racing to modernize their services, while new fintech companies are disrupting the industry with innovative solutions.</p>
+                    <p class="lead">Indonesia sedang menghadapi krisis sampah yang semakin mengkhawatirkan. Dengan produksi sampah mencapai 175.000 ton per hari, kita perlu bertindak cepat dan tepat untuk mengatasi masalah ini.</p>
 
-                    <h2>Key Innovations in Digital Banking</h2>
+                    <h2>Skala Krisis yang Mengkhawatirkan</h2>
+                    <p>Setiap harinya, Indonesia memproduksi sampah setara dengan berat 17.500 truk sampah. Dari jumlah tersebut, hanya 7-8% yang berhasil didaur ulang, sementara sisanya berakhir di tempat pembuangan akhir (TPA) atau bahkan mencemari lingkungan.</p>
+
+                    <h2>Dampak Serius bagi Lingkungan dan Kesehatan</h2>
                     <ul>
-                        <li>Artificial Intelligence and Machine Learning</li>
-                        <li>Blockchain Technology</li>
-                        <li>Open Banking APIs</li>
-                        <li>Mobile-First Solutions</li>
-                        <li>Biometric Authentication</li>
+                        <li>Pencemaran air tanah dan sungai</li>
+                        <li>Polusi udara dari pembakaran sampah</li>
+                        <li>Kerusakan ekosistem laut</li>
+                        <li>Ancaman kesehatan masyarakat</li>
+                        <li>Kontribusi terhadap perubahan iklim</li>
                     </ul>
 
-                    <h2>The Impact on Customer Experience</h2>
-                    <p>These innovations are fundamentally changing how customers interact with their banks. From instant payments to personalized financial advice, the focus is on creating seamless, intuitive experiences that meet modern consumers' needs.</p>
+                    <h2>Tantangan Utama</h2>
+                    <p>Beberapa tantangan utama yang dihadapi Indonesia dalam pengelolaan sampah meliputi:</p>
+                    <ul>
+                        <li>Infrastruktur pengolahan sampah yang terbatas</li>
+                        <li>Rendahnya kesadaran masyarakat tentang pemilahan sampah</li>
+                        <li>Sistem pengumpulan dan pengangkutan yang belum optimal</li>
+                        <li>Minimnya teknologi pengolahan sampah modern</li>
+                    </ul>
 
                     <blockquote>
-                        <p>"The future of banking is not just digital—it's intelligent, personalized, and seamlessly integrated into our daily lives."</p>
+                        <p>"Krisis sampah bukan hanya masalah pemerintah, tetapi tanggung jawab seluruh masyarakat. Setiap tindakan kecil untuk mengurangi dan mengelola sampah akan memberikan dampak besar bagi lingkungan."</p>
                     </blockquote>
 
-                    <h2>Security Considerations</h2>
-                    <p>As banking becomes increasingly digital, security remains a top priority. Banks are implementing advanced security measures while ensuring user experience remains smooth and intuitive.</p>
+                    <h2>Solusi yang Ditawarkan</h2>
+                    <p>Beberapa solusi yang dapat diterapkan untuk mengatasi krisis sampah:</p>
+                    <ul>
+                        <li>Implementasi teknologi AI untuk pemilahan dan daur ulang sampah</li>
+                        <li>Program edukasi dan kampanye kesadaran masyarakat</li>
+                        <li>Pengembangan bank sampah dan sistem daur ulang</li>
+                        <li>Kebijakan pengurangan penggunaan plastik sekali pakai</li>
+                        <li>Kolaborasi antara pemerintah, swasta, dan masyarakat</li>
+                    </ul>
 
-                    <h2>Looking Ahead</h2>
-                    <p>The pace of innovation in digital banking shows no signs of slowing. As technology continues to evolve, we can expect even more revolutionary changes in how we manage our money.</p>
+                    <h2>Langkah Selanjutnya</h2>
+                    <p>Untuk mengatasi krisis ini, diperlukan tindakan nyata dari semua pihak. Mulai dari pemilahan sampah di rumah, mendukung program daur ulang, hingga menggunakan teknologi modern untuk pengolahan sampah. Dengan komitmen bersama, kita dapat menciptakan Indonesia yang lebih bersih dan berkelanjutan.</p>
                 </div>
 
                 <!-- Tags -->
                 <div class="flex flex-wrap gap-2 mt-8">
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Digital Banking</span>
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Innovation</span>
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Technology</span>
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Future Trends</span>
+                    <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Krisis Sampah</span>
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Lingkungan</span>
+                    <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Daur Ulang</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Teknologi AI</span>
                 </div>
 
                 <!-- Share Buttons -->
@@ -90,4 +107,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
+
 </html>

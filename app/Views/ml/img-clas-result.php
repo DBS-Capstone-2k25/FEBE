@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasil Klasifikasi - Bedah Sampah</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/icon/logo2.png') ?>">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <script>
         const wasteTypeTranslations = {
@@ -79,8 +81,8 @@
 
                             <div class="flex items-center justify-center">
                                 <div class="w-full max-w-md bg-gray-200 rounded-full h-6 overflow-hidden">
-                                    <div class="h-full rounded-full transition-all duration-700 ease-out" id="confidenceBar" 
-                                         style="width: 0%">
+                                    <div class="h-full rounded-full transition-all duration-700 ease-out" id="confidenceBar"
+                                        style="width: 0%">
                                     </div>
                                 </div>
                                 <span class="ml-3 text-lg font-semibold" id="confidenceText"></span>
@@ -89,7 +91,7 @@
                                 const confidence = <?= $confidence ?>;
                                 const confidenceBar = document.getElementById('confidenceBar');
                                 const confidenceText = document.getElementById('confidenceText');
-                                
+
                                 confidenceBar.className += ' ' + getConfidenceColor(confidence);
                                 setTimeout(() => {
                                     confidenceBar.style.width = `${confidence * 100}%`;
@@ -108,7 +110,7 @@
                         <div class="bg-gray-50 p-6 rounded-xl shadow-sm mb-6">
                             <h4 class="text-lg font-semibold text-gray-800 mb-4 text-center">Prediksi Alternatif</h4>
                             <div class="space-y-3">
-                                <?php foreach (array_slice($classification['all_predictions'], 0, 3) as $pred): 
+                                <?php foreach (array_slice($classification['all_predictions'], 0, 3) as $pred):
                                     $altConfidence = $pred['confidence'] ?? $pred['probability'] ?? 0;
                                     $altClass = $pred['class'] ?? $pred['label'] ?? 'Unknown';
                                 ?>
@@ -120,8 +122,8 @@
                                             </span>
                                         </div>
                                         <div class="w-full bg-gray-200 rounded-full h-2">
-                                            <div class="h-2 rounded-full <?= $altConfidence >= 0.7 ? 'bg-blue-500' : ($altConfidence >= 0.5 ? 'bg-yellow-500' : 'bg-red-500') ?>" 
-                                                 style="width: <?= round($altConfidence * 100) ?>%"></div>
+                                            <div class="h-2 rounded-full <?= $altConfidence >= 0.7 ? 'bg-blue-500' : ($altConfidence >= 0.5 ? 'bg-yellow-500' : 'bg-red-500') ?>"
+                                                style="width: <?= round($altConfidence * 100) ?>%"></div>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
