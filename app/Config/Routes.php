@@ -16,3 +16,9 @@ $routes->post('img-clas', 'ImgClas::predict');
 
 $routes->get('objec-det', 'ObjectDetController::index');
 $routes->post('objec-det', 'ObjectDetController::detect');
+
+
+
+
+$routes->get('chatbot', 'ChatbotController::index');
+$routes->post('chatbot/send', 'ChatbotController::sendMessage');
