@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deteksi Objek - Bedah Sampah</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/icon/logo2.png') ?>">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
 </head>
 

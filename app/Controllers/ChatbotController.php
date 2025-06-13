@@ -52,7 +52,7 @@ class ChatbotController extends BaseController
                     'User-Agent: ChatbotCI4/1.0'
                 ],
                 CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_TIMEOUT => 500, // Increased timeout
+                CURLOPT_TIMEOUT => 1000, // Increased timeout
                 CURLOPT_CONNECTTIMEOUT => 15,
                 CURLOPT_FOLLOWLOCATION => true,
                 CURLOPT_MAXREDIRS => 3,

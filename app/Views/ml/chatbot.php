@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoBot - Asisten Pengelolaan Sampah Cerdas</title>
+    <title>Bedah Sampah - Asisten Pengelolaan Sampah Cerdas</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/icon/logo2.png') ?>">
+
     <script>
         tailwind.config = {
             theme: {
@@ -85,7 +87,7 @@
         <div class="w-full max-w-4xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-8 animate-slide-up">
-                <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-green-500 to-blue-500 rounded-full mb-4 animate-bounce-subtle">
+                <div class=" inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-green-500 to-blue-500 rounded-full mt-20 animate-bounce-subtle">
                     <i class="fas fa-robot text-2xl text-white"></i>
                 </div>
                 <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-2">
@@ -202,13 +204,13 @@
                 </div>
             </div>
 
-            Footer
+            <!-- Footer -->
             <div class="text-center mt-6 text-sm text-gray-500 animate-slide-up" style="animation-delay: 0.4s;">
                 <p>Powered by AI • Membantu lingkungan yang lebih bersih 🌱</p>
             </div>
         </div>
     </div>
-    <?php include('footer.php'); ?>
+
     <script>
         class EcoChatbot {
             constructor() {
@@ -401,5 +403,6 @@
         });
     </script>
 </body>
+<?php include(APPPATH . 'Views/landing-page/footer.php'); ?>
 
 </html>
