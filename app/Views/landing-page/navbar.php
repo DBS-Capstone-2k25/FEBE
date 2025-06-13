@@ -25,6 +25,12 @@
                 <li>
                     <a href="<?= base_url('jadwal') ?>" class="block py-2 px-3 <?= current_url() == base_url('jadwal') ? 'bg-blue-700 text-white' : 'text-gray-900' ?> rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">jadwal</a>
                 </li>
+                <li>
+                    <a href="<?= base_url('img-clas') ?>" class="block py-2 px-3 <?= current_url() == base_url('img-clas') ? 'bg-blue-700 text-white' : 'text-gray-900' ?> rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Klasifikasi</a>
+                </li>
+                <li>
+                    <a href="<?= base_url('objec-det') ?>" class="block py-2 px-3 <?= current_url() == base_url('objec-det') ? 'bg-blue-700 text-white' : 'text-gray-900' ?> rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Klasifikasi</a>
+                </li>
             </ul>
         </div>
     </div>
