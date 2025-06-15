@@ -1,68 +1,127 @@
-# CodeIgniter 4 Application Starter
+# Bedah Sampah - AI-Powered Waste Management Platform
 
-## What is CodeIgniter?
+<div align="center">
+  <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="90" fill="#4CAF50" opacity="0.2"/>
+    <path d="M65,135 L135,135 L150,80 L50,80 L65,135 Z M85,75 L115,75 L110,65 L90,65 L85,75" fill="#4CAF50"/>
+    <circle cx="75" cy="145" r="8" fill="#4CAF50"/>
+    <circle cx="125" cy="145" r="8" fill="#4CAF50"/>
+    <path d="M95,95 L105,95 L105,120 L95,120 L95,95 Z M90,105 L110,105" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  </svg>
+  <h3>Smart Waste Management for a Better Future</h3>
+</div>
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## 🌟 Overview
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+Bedah Sampah is an innovative web application that combines artificial intelligence with waste management education and scheduling. Our platform helps communities better understand and manage their waste through AI-powered tools, educational resources, and practical scheduling features.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## ✨ Features
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+### 🤖 AI Technologies
+- **Image Classification**: Identify waste types from images
+- **Object Detection**: Analyze waste objects in real-time
+- **AI Assistant**: Get smart recommendations for waste management
 
-## Installation & updates
+### 📚 Educational Resources
+- Comprehensive articles about waste management
+- Practical guides for waste sorting
+- Environmental impact awareness content
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+### 📅 Scheduling System
+- Waste collection schedule management
+- Waste bank program coordination
+- Recycling program scheduling
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## 🚀 Installation
 
-## Setup
+### Prerequisites
+- PHP 7.4 or higher
+- Composer
+- Node.js and npm
+- Web server (Apache/Nginx)
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+### Step-by-Step Installation
 
-## Important Change with index.php
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/bedah-sampah.git
+cd bedah-sampah
+```
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+2. Install PHP dependencies
+```bash
+composer install
+```
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+3. Set up environment file
+```bash
+cp env .env
+```
+Edit `.env` file with your database and other configuration settings
 
-**Please** read the user guide for a better explanation of how CI4 works!
+4. Set up database
+```bash
+php spark migrate
+php spark db:seed
+```
 
-## Repository Management
+5. Start development server
+```bash
+php spark serve
+```
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+Visit `http://localhost:8080` in your browser
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+## 🛠 Tech Stack
 
-## Server Requirements
+- **Backend**: CodeIgniter 4
+- **Frontend**: Tailwind CSS, Flowbite
+- **AI Models**: TensorFlow.js
+- **Database**: MySQL
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+## 📱 Screenshots
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+<div align="center">
+  <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Dashboard Preview -->
+    <rect x="10" y="10" width="280" height="280" rx="10" fill="#f8f9fa" stroke="#dee2e6"/>
+    <rect x="30" y="30" width="240" height="40" rx="5" fill="#4CAF50" opacity="0.2"/>
+    <rect x="30" y="90" width="115" height="80" rx="5" fill="#4CAF50" opacity="0.1"/>
+    <rect x="155" y="90" width="115" height="80" rx="5" fill="#4CAF50" opacity="0.1"/>
+    <rect x="30" y="180" width="240" height="90" rx="5" fill="#4CAF50" opacity="0.1"/>
+    
+    <!-- Mobile Preview -->
+    <rect x="310" y="10" width="280" height="280" rx="10" fill="#f8f9fa" stroke="#dee2e6"/>
+    <rect x="330" y="30" width="240" height="60" rx="5" fill="#4CAF50" opacity="0.2"/>
+    <rect x="330" y="100" width="240" height="40" rx="5" fill="#4CAF50" opacity="0.1"/>
+    <rect x="330" y="150" width="240" height="40" rx="5" fill="#4CAF50" opacity="0.1"/>
+    <rect x="330" y="200" width="240" height="40" rx="5" fill="#4CAF50" opacity="0.1"/>
+  </svg>
+</div>
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+## 🤝 Contributing
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Team
+
+- Frontend Developers
+- Backend Developers
+- UI/UX Designers
+- AI/ML Engineers
+
+## 📞 Contact
+
+For any inquiries, please reach out to us at:
+- Email: contact@bedahsampah.id
+- Website: https://bedahsampah.id
+
+---
+
+<div align="center">
+Made with ❤️ for a cleaner Indonesia
+</div>
